@@ -59,11 +59,16 @@ section {
 
 /* Home */
 .home {
+  min-height: calc(100vh - 80px); /* accounts for navbar */
+  padding-top: 120px;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  gap: 3rem;
+  justify-content: center; /* THIS FIXES THE GAP */
+  gap: 1.5rem; /* controlled spacing */
+  text-align: center;
 }
+
 
 .home-text h1 {
   font-size: 3rem;
@@ -88,6 +93,7 @@ section {
   overflow: hidden; /* VERY IMPORTANT */
   border: 4px solid var(--moss);
   box-shadow: 0 20px 40px rgba(87, 98, 56, 0.35);
+   margin-bottom: 0.5rem;
 }
 
 .avatar img {
@@ -232,4 +238,17 @@ section {
     font-size: 0.95rem;
   }
 }
+@media (max-width: 768px) {
+
+  section {
+    padding: 80px 6% 50px; /* reduce top & bottom padding */
+    min-height: auto; /* VERY IMPORTANT */
+  }
+
+  .home {
+    padding-top: 100px;
+  }
+}
+
+
 
