@@ -21,7 +21,7 @@ body {
 nav {
   position: fixed;
   top: 0;
-  width: 100%;
+  width: 80%;
   padding: 2rem 3rem;
   display: flex;
   justify-content: space-between;
@@ -247,6 +247,7 @@ section {
     padding-top: 100px;
   }
 }
+
 
 
 
