@@ -22,11 +22,13 @@ nav {
   position: fixed;
   top: 0;
   width: 80%;
+  height: 80px
   padding: 2rem 3rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background: var(--eggshell);
+  z-index: 1000;
 }
 
 nav h1 {
@@ -57,20 +59,21 @@ section {
 
 /* Home */
 .home {
-  min-height: calc(100vh - 80px); /* accounts for navbar */
-  padding-top: 120px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center; /* THIS FIXES THE GAP */
-  gap: 1.5rem; /* controlled spacing */
+  justify-content: flex-start;
+  gap: 1.2rem;
   text-align: center;
 }
+
 
 
 .home-text h1 {
   font-size: 3rem;
   color: var(--moss);
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .home-text p {
@@ -81,18 +84,17 @@ section {
 
 /* Avatar */
 .avatar {
-  width: 280px;
-  height: 280px;
-  border-radius: 40%;
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
   background: var(--moss);
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden; /* VERY IMPORTANT */
-  border: 4px solid var(--moss);
-  box-shadow: 0 20px 40px rgba(87, 98, 56, 0.35);
-   margin-bottom: 0.5rem;
+  overflow: hidden;
+  margin-bottom: 1rem;
 }
+
 
 .avatar img {
   width: 100%;
@@ -191,7 +193,7 @@ section {
 
   /* Sections spacing */
   section {
-    padding: 90px 6% 60px;
+    padding: 120px 8% 80px;
   }
 
   /* Home Section */
@@ -247,6 +249,7 @@ section {
     padding-top: 100px;
   }
 }
+
 
 
 
